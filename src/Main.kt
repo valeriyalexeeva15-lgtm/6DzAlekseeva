@@ -7,12 +7,20 @@ fun main() {
 //    armor.printInfo()
 //    potion.printInfo()
 
-    val safeLocation = Location("Деревня", "Низкий", 1)
-    val dangerousLocation = Location("Пещера", "Высокий", 5)
+//    val safeLocation = Location("Деревня", "Низкий", 1)
+//    val dangerousLocation = Location("Пещера", "Высокий", 5)
+//
+//    println(safeLocation.name)
+//    println(safeLocation.isDangerous())
+//
+//    println(dangerousLocation.name)
+//    println(dangerousLocation.isDangerous())
 
-    println(safeLocation.name)
-    println(safeLocation.isDangerous())
+    val hero = Hero("Герой", 5)
 
-    println(dangerousLocation.name)
-    println(dangerousLocation.isDangerous())
+    val spell1 = Spell("Шаровая молния", 5, 3)
+    val spell2 = Spell("Лёд",3 , 3)
+
+    println(hero.canCast(spell1))
+    println(hero.canCast(spell2))
 }
