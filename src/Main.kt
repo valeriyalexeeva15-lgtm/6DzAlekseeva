@@ -16,11 +16,20 @@ fun main() {
 //    println(dangerousLocation.name)
 //    println(dangerousLocation.isDangerous())
 
-    val hero = Hero("Герой", 5)
+//    val hero = Hero("Герой", 5)
+//
+//    val spell1 = Spell("Шаровая молния", 5, 3)
+//    val spell2 = Spell("Лёд",3 , 3)
+//
+//    println(hero.canCast(spell1))
+//    println(hero.canCast(spell2))
 
-    val spell1 = Spell("Шаровая молния", 5, 3)
-    val spell2 = Spell("Лёд",3 , 3)
 
-    println(hero.canCast(spell1))
-    println(hero.canCast(spell2))
+    val enemy1 = Enemy(60, 4)
+    val enemy2 = Enemy(40)
+    val enemy3 = Enemy(100, 6)
+
+    println("Враг 1: сила = ${enemy1.calculatePower()}")
+    println("Враг 2: сила = ${enemy2.calculatePower()}")
+    println("Враг 3: сила = ${enemy3.calculatePower()}")
 }
